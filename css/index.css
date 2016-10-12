@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 12px "Microsoft yahei",arial, Simsun, sans-serif;
+    color: #333333;
+}
+body,html{
+    overflow-x: hidden;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+.clearfix:before,.clearfix:after{
+    display: block;
+    content: "";
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix{*zoom:1}
+.w960{
+    width: 960px;
+    margin: 0 auto;
+}
+/*头部部分*/
+.header .logo{
+    float: left;
+    margin-top: 10px;
+}
+.header .logo a{
+    display: block;
+    width: 140px;
+    height: 60px;
+    background: url("../img/logo.png");
+}
+.header .headerC{
+    float: left;
+    margin:35px 0 0 80px;
+}
+.header .headerC li{
+    float: left;
+    margin-right: 30px;
+}
+.header .headerC li a{
+    color: #444444;
+}
+.header .headerC li a:hover{
+    color: #660099;
+}
+.header .headerR{
+    float: left;
+    margin-left: 20px;
+}
+.header .headerR li{
+    float: left;
+    margin-top: 29px;
+    color: #955ba8;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.header .headerR li.headerR2{
+    color: #7bb430;
+}
+.header .headerR i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icon_bg.png") -52px 0;
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: transform .4s ease 0s
+}
+.header .headerR li i:hover{
+    transform: rotate(360deg);
+}
+.header .headerR .headerR2 i{
+    background: url("../img/icon_bg.png") -76px 0;
+}
+.headerBg{
+    width: auto;
+    height: 3px;
+    background: url("../img/header_bg.png");
+    margin-top: 10px;
+}
+/*banner部分*/
+.bannerBox{
+    position: relative;
+    height: 618px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bannerBox .banner{
+    position: absolute;
+    width: 1920px;
+    left: 50%;
+    margin-left:-960px;
+}
+.bannerBox .banner a{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+}
+.bannerBox .banner a img{
+    width: auto;
+    height: 618px;
+}
+.bannerBox .bannerTip{
+    position: absolute;
+    top: 320px;
+    width: 480px;
+    left: 50%;
+    margin-left: -480px;
+    z-index: 10;
+}
+.bannerBox .bannerTip li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background: #272836;
+    border-radius: 6px;
+}
+.bannerBox .bannerTip li.on{
+    width: 30px;
+    background: #ff3d0d;
+}
+.bannerBox .nav{
+    position: absolute;
+    top: 360px;
+    left:50%;
+    margin-left: -480px;
+}
+.bannerBox .navBg{
+    position: absolute;
+    width: 960px;
+    height: 112px;
+    top: 0;
+    left: -50%;
+    background:url("../img/nav_p24.png");
+    z-index: 10;
+}
+.bannerBox .navIcon{
+    position: absolute;
+    top: 0;
+    left:75px;
+    z-index: 10;
+}
+.bannerBox .navIcon a{
+    float: left;
+    margin:14px 20px 8px 0;
+}
+.bannerBox .navIcon a span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/sprite.png");
+    overflow: hidden;
+    transition: transform,.4s,ease
+}
+.bannerBox .navIcon a span:hover{
+    transform: rotate(360deg);
+}
+.bannerBox .navIcon a span.navIcon1{
+    background-position: 0 -201px;
+}
+.bannerBox .navIcon a span.navIcon2{
+    background-position: 0 -262px;
+}
+.bannerBox .navIcon a span.navIcon3{
+    background-position: 0 -323px;
+}
+.bannerBox .navIcon a span.navIcon4{
+    background-position: 0 -384px;
+}
+.bannerBox .navIcon a span.navIcon5{
+    background-position: 0 -445px;
+}
+.bannerBox .navIcon a b{
+    display: inline-block;
+    color: #898ba6;
+    margin-left:18px;
+    padding-top: 7px;
+}
+.bannerBox .navIcon a b:hover{
+    text-decoration: underline;
+}
+/*content部分*/
+.content{
+    height: 418px;
+    background: url("../img/bg2.jpg") no-repeat center top #e8e8e8;
+    position: relative;
+}
+.content .contentInner{
+    width: 100%;
+    height: 479px;
+    overflow-x: hidden;
+    position: absolute;
+    top: -61px;
+}
+.content .contentInner .inner{
+    width: 960px;
+    height: 479px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/bg3.jpg) no-repeat center 61px;
+}
+.content .contentInner .inner ul{
+    position: absolute;
+    height: 26px;
+    width: 152px;
+    text-align: center;
+    bottom: 20px;
+    left: 420px;
+}
+.content .contentInner .inner ul li{
+    width: 26px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    vertical-align: top;
+    background: url(../img/point.jpg) no-repeat;
+}
+.content .contentInner .inner ul li.on{
+    background: url("../img/point_h.jpg") no-repeat;
+}
+.content .contentInner .inner .listBox{
+    width: 960px;
+    height: 400px;
+    position: absolute;
+    left: -1450px;
+}
+.content .contentInner .inner .listBox .littleBox{
+    float: left;
+    width: 320px;
+    height: 200px;
+    position: relative;
+}
+.content .contentInner .inner .listBox .littleBox img{
+    width: 100%;
+    height: 100%;
+}
+.content .contentInner .inner .listBox .littleBox .front{
+    width:320px;
+    height:200px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+}
+.content .contentInner .inner .listBox .littleBox .back{
+    width:320px;
+    height:200px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.content .contentInner .inner .listBox .littleBox:hover .front,.content .contentInner .inner .listBox .littleBox:hover .back{
+    transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+}
+.content .contentInner .inner .listBox .littleBox:hover .back{
+    z-index:2;
+}
+.front,.back{
+    transition:all .2s linear 10ms;
+}
+/*news部分*/
+.newsBox{
+    background: #e8e8e8;
+}
+.newsBox .news{
+    width: 1000px;
+    height: 406px;
+    margin: 0 auto;
+    background:url("../img/bg-news.jpg");
+}
+.newsBox .news .newsInner{
+    padding: 2px 0 0 21px;
+    position: relative;
+}
+.newsBox .news .newsInner .news1{
+    width: 575px;
+    height: 120px;
+    border-right: solid 1px #d1d1d1;
+    position: relative;
+    border-bottom: solid 1px #d1d1d1;
+    overflow: hidden;
+}
+.newsBox .news .newsInner .news1 h3{
+    margin: 25px 0 0 18px;
+}
+.newsBox .news .newsInner .news1 h3 a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.newsBox .news .newsInner .news1 h3 a:hover{
+    color: #660099;
+    text-decoration: underline;
+}
+.newsBox .news .newsInner .news1 p{
+    width: 435px;
+    margin: 10px 0 0 18px;
+}
+.newsBox .news .newsInner .news1 p a{
+    font-size: 14px;
+    color: #7d7d7d;
+    line-height: 26px;
+}
+.newsBox .news .newsInner .news1 p a:hover{
+    text-decoration: underline;
+}
+.newsBox .news .newsInner .news1 a.more{
+    position: absolute;
+    top:27px;
+    right: 23px;
+    width: 63px;
+    height: 63px;
+    overflow: hidden;
+    background: url("../img/more.jpg") 0 0 no-repeat;
+}
+.newsBox .news .newsInner .news1 a.more:hover{
+    background-position:-64px 0;
+}
+.newsBox .news .newsInner .newsList{
+    position: absolute;
+    top:0;
+    right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.newsBox .news .newsInner .newsList dt{
+    font-size: 16px;
+    color: #272936;
+    font-weight: bold;
+    padding: 22px 52px;
+    border-bottom: 1px dashed #7d7d7d;
+    margin-bottom: 24px;
+}
+.newsBox .news .newsInner .newsList dd{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7d7d;
+    padding: 0 8px;
+}
+.newsBox .news .newsInner .newsList dd span{
+    float: right;
+    color: #7d7d7d;
+}
+.newsBox .news .newsInner .follow{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.newsBox .news .newsInner .follow span{
+    display: inline-block;
+    width: 96px;
+    height: 33px;
+    background: url("../img/sprite.png") 0 -168px no-repeat;
+    margin-right: 12px;
+}
+.newsBox .news .newsInner .follow i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 -26px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.newsBox .news .newsInner .follow b{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("../img/sprite.png") 0 -62px no-repeat;
+    margin-right: 20px;
+}
+.newsBox .news .newsInner .follow em{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("../img/sprite.png") 0 -98px no-repeat;
+    margin-right: 20px;
+}
+.newsBox .news .newsInner .follow em img{
+    position: absolute;
+    top: -172px;
+    right: 0;
+    display: none;
+}
+.newsBox .news .newsInner .follow em:hover{
+    background-position: -36px -98px;
+}
+.newsBox .news .newsInner .follow em:hover img{
+    display: block;
+}
+.newsBox .news .newsInner .follow .rotate:hover{
+    transition: transform,.4s,ease-out;
+    transform: rotate(360deg);
+}
+/*game部分*/
+.gameBox{
+    width: 100%;
+    background: #e8e8e8;
+}
+.game {
+    width: 1000px;
+    margin: 0 auto;
+}
+.game .gameTitle{
+    width: 100%;
+    height: 47px;
+    background: url("../img/glist_tit.jpg");
+}
+.game .gameTitle ul{
+    margin-left: 88px;
+}
+.game .gameTitle ul li{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 136px;
+    margin-top: 14px;
+}
+.game .gameTitle ul li.noMar{
+    margin-right: 0;
+}
+.game .gameList{
+    width: 100%;
+    height: 244px;
+    background: url("../img/glist_repeat.png") repeat-y;
+}
+.game .gameList ul{
+    color: #787878;
+    padding-left: 58px;
+    padding-top: 23px;
+    float: left;
+}
+.game .gameList ul li{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.game .gameList ul li:hover{
+    text-decoration: underline;
+}
+.game .gameList ul li i{
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    margin-right: 8px;
+    background: url("../img/sprite.png");
+}
+.game .gameList ul li i.listH,.game .gameBottom .gameBot i.listH{
+    background-position: -26px 0;
+}
+.game .gameList ul li i.listN,.game .gameBottom .gameBot li i.listN{
+    background-position: -37px 0;
+}
+.game .gameList ul li i.listB,.game .gameBottom .gameBot i.listB{
+    background-position: -48px 0;
+}
+.game .gameList ul li i.mar{
+    margin-left: 17px;
+}
+.game .gameList .gameList2{
+    padding-left: 100px;
+}
+.game .gameList .gameList3{
+    padding-left: 115px;
+}
+.game .gameList .gameList4{
+    padding-left: 127px;
+}
+.game .gameBottom{
+    width: 1000px;
+    height: 49px;
+    margin: 0 auto;
+    background: url("../img/glist_bot.jpg");
+    position: relative;
+}
+.game .gameBottom .gameBot{
+    position: absolute;
+    bottom: 16px;
+    right: 50px;
+}
+.game .gameBottom .gameBot li{
+    float: left;
+    padding-left: 22px;
+}
+.game .gameBottom .gameBot li i{
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    margin-right: 8px;
+    background: url("../img/sprite.png");
+}
+/*footer部分*/
+.bottomBg{
+    width: auto;
+    height: 70px;
+    background: url("../img/bottom_bg.gif") 0 60px no-repeat #e8e8e8;;
+}
+.footer{
+    padding: 20px 0 20px;
+    height: 71px;
+    min-width: 980px;
+    width: 100%;
+    background:#f0f0f0;
+}
+.footer .footerMain{
+    position: relative;
+}
+.footer .footerMain span{
+    display: inline-block;
+    width: 105px;
+    height: 55px;
+    background: url("../img/logo2.png") no-repeat scroll 0 -45px;
+}
+.footer .footerMain i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("../img/cyou_copyright_sprite.png") no-repeat;
+    margin-left: 26px;
+    vertical-align: 11px;
+}
+.footer .footerMain b{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("../img/stamp.png") no-repeat;
+    margin-left: 16px;
+    vertical-align: 11px;
+}
+.footer .footerMain div{
+    position: absolute;
+    left: 268px;
+    top:0;
+}
+.footer .footerMain div p{
+    line-height: 20px;
+    height: 20px;
+    color: #aaa;
+}
+.footer .footerMain div p em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/ba.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/*固定定位部分*/
+.fixedR{
+    position: fixed;
+    top: 280px;
+    right: 0;
+    cursor: pointer;
+    width: 89px;
+    height: 196px;
+    background: url("../img/right.png") no-repeat;
+    z-index: 100;
+}
+
